@@ -11,7 +11,7 @@
         <!--The Milky Way-->
         <scene sceneID="UXw-5c-OfN">
             <objects>
-                <viewController id="H5M-OD-rU9" customClass="ViewController" customModule="ProjectNASA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="H5M-OD-rU9" customClass="ViewController" customModule="ProjectNASA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d0f-09-Ohh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="120" id="kVo-ZO-vWH" customClass="ImagesTableViewCell" customModule="NASA_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImagesDataTableViewCell" rowHeight="120" id="kVo-ZO-vWH" customClass="ImagesTableViewCell" customModule="ProjectNASA" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kVo-ZO-vWH" id="lSc-H2-uUo">
@@ -73,6 +73,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="The Milky Way" id="3Tg-Kt-6fk"/>
+                    <connections>
+                        <outlet property="tableView" destination="WoC-BB-Nep" id="egV-dp-CjY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8nI-4e-IbI" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,7 +102,7 @@
         <!--Image Details View Controller-->
         <scene sceneID="YTo-WB-haX">
             <objects>
-                <viewController storyboardIdentifier="ImageDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mn1-o9-1hN" customClass="ImageDetailsViewController" customModule="NASA_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mn1-o9-1hN" customClass="ImageDetailsViewController" customModule="ProjectNASA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VB7-bH-UfY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

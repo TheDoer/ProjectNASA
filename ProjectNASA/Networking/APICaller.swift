@@ -16,7 +16,7 @@ final class APICaller {
     
     private init() {}
     
-    public func getNASAImageData(completion: @escaping (Result<[Item], Error>) -> Void) {
+    public func getNASAImageData(completion: @escaping (Result<Data, Error>) -> Void) {
         guard let url = Constants.NASAUrl else {
             return
         }
@@ -34,7 +34,7 @@ final class APICaller {
                     
                     DispatchQueue.main.async {
                         print("Images Count: \(result.collection.items?.count)")
-                        completion(.success(result.collection.items!))
+                        //completion(.success())
                     }
                     
                     

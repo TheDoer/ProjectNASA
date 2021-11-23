@@ -16,6 +16,12 @@
 		F1BD8C7C27469BBA005A5966 /* ProjectNASATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD8C7B27469BBA005A5966 /* ProjectNASATests.swift */; };
 		F1BD8C8627469BBA005A5966 /* ProjectNASAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD8C8527469BBA005A5966 /* ProjectNASAUITests.swift */; };
 		F1BD8C8827469BBA005A5966 /* ProjectNASAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD8C8727469BBA005A5966 /* ProjectNASAUITestsLaunchTests.swift */; };
+		F1BD8C9C2747ACE8005A5966 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD8C9B2747ACE8005A5966 /* APICaller.swift */; };
+		F1BD8C9E2747DC57005A5966 /* ImagesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD8C9D2747DC57005A5966 /* ImagesDataModel.swift */; };
+		F1BD8CA3274B8038005A5966 /* ImagesDataTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD8CA2274B8038005A5966 /* ImagesDataTableViewCellViewModel.swift */; };
+		F1BD8CA4274B8038005A5966 /* ImagesDataTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD8CA2274B8038005A5966 /* ImagesDataTableViewCellViewModel.swift */; };
+		F1BD8CA6274B8794005A5966 /* ImagesDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD8CA5274B8794005A5966 /* ImagesDataTableViewCell.swift */; };
+		F1BD8CA7274B8794005A5966 /* ImagesDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD8CA5274B8794005A5966 /* ImagesDataTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,10 @@
 		F1BD8C8127469BBA005A5966 /* ProjectNASAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectNASAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1BD8C8527469BBA005A5966 /* ProjectNASAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectNASAUITests.swift; sourceTree = "<group>"; };
 		F1BD8C8727469BBA005A5966 /* ProjectNASAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectNASAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1BD8C9B2747ACE8005A5966 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		F1BD8C9D2747DC57005A5966 /* ImagesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesDataModel.swift; sourceTree = "<group>"; };
+		F1BD8CA2274B8038005A5966 /* ImagesDataTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesDataTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		F1BD8CA5274B8794005A5966 /* ImagesDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesDataTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,17 @@
 		F1BD8C6327469BB7005A5966 /* ProjectNASA */ = {
 			isa = PBXGroup;
 			children = (
+				F1BD8C982747713D005A5966 /* Networking */,
+				F1BD8C96274770FF005A5966 /* ViewController */,
+				F1BD8C95274770F4005A5966 /* Model */,
+				F1BD8C94274770ED005A5966 /* ViewModel */,
 				F1BD8C6427469BB7005A5966 /* AppDelegate.swift */,
 				F1BD8C6627469BB7005A5966 /* SceneDelegate.swift */,
-				F1BD8C6827469BB7005A5966 /* ViewController.swift */,
 				F1BD8C6A27469BB7005A5966 /* Main.storyboard */,
 				F1BD8C6D27469BB9005A5966 /* Assets.xcassets */,
 				F1BD8C6F27469BB9005A5966 /* LaunchScreen.storyboard */,
 				F1BD8C7227469BB9005A5966 /* Info.plist */,
+				F1BD8CA5274B8794005A5966 /* ImagesDataTableViewCell.swift */,
 			);
 			path = ProjectNASA;
 			sourceTree = "<group>";
@@ -125,6 +139,38 @@
 				F1BD8C8727469BBA005A5966 /* ProjectNASAUITestsLaunchTests.swift */,
 			);
 			path = ProjectNASAUITests;
+			sourceTree = "<group>";
+		};
+		F1BD8C94274770ED005A5966 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1BD8CA2274B8038005A5966 /* ImagesDataTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F1BD8C95274770F4005A5966 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1BD8C9D2747DC57005A5966 /* ImagesDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1BD8C96274770FF005A5966 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1BD8C6827469BB7005A5966 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F1BD8C982747713D005A5966 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F1BD8C9B2747ACE8005A5966 /* APICaller.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1BD8C9E2747DC57005A5966 /* ImagesDataModel.swift in Sources */,
+				F1BD8CA3274B8038005A5966 /* ImagesDataTableViewCellViewModel.swift in Sources */,
 				F1BD8C6927469BB7005A5966 /* ViewController.swift in Sources */,
 				F1BD8C6527469BB7005A5966 /* AppDelegate.swift in Sources */,
+				F1BD8C9C2747ACE8005A5966 /* APICaller.swift in Sources */,
 				F1BD8C6727469BB7005A5966 /* SceneDelegate.swift in Sources */,
+				F1BD8CA6274B8794005A5966 /* ImagesDataTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1BD8CA7274B8794005A5966 /* ImagesDataTableViewCell.swift in Sources */,
 				F1BD8C7C27469BBA005A5966 /* ProjectNASATests.swift in Sources */,
+				F1BD8CA4274B8038005A5966 /* ImagesDataTableViewCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
